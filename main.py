@@ -28,14 +28,14 @@ uvod_zacatek = "Mezzobran vešla do temné sklepní hospody a rozhlédla se jant
 uvod_ukol = "\'Tak o co jde v té práci?\' \n \'No, o jisté dopisy, které jsem poslal jedné lady, a které by mne mohly\n  dostat do společenských problémů,\' vysvětloval klient neurčitě. \n \'Aha,\' Mezzobran tušila svoje\n  a detaily ji nezajímaly, \'a víte, kde ty dopisy jsou.\' \n \'V jejím trezoru. Má ho v ložnici a klíček\n nosí vždy na krku. I do postele.\' \n Aha. No, s tím si bude muset poradit. \n \'Kde najdu tu ložnici?\n Předpokládám, že se tam bude nacházet i dotyčná dáma,\' snažila se temná elfka tvářit sebejistě.\n \'V patře vily na Stříbrném kopci, úplně poslední na hlavní ulici vlevo ve směru od města. Na\n opačném konci, než ústí schodiště, vlevo, když se díváte tím směrem,\' popsal poměrně podrobně\n cestu zákazník. \n \'Dobře. Moje cena je pět set Králů, to snad víte?\' \n \'Jistě, to není nejmenší\n problém.\'\n"
 uvod_priprava = "Ve své malé světničce se Mezzobran chystala na loupež. Vsunula do kapsy sadu paklíčů. Ty by\n měly stačit na běžné zámky, ale trezorové nejspíše neodemknou. Proto přidala hadřík a lahvičku\n oleje sladkého vitriolu. Pak zaváhala, ale nakonec oblékla prošívaný kabátec a připásala si kordík.\n Snad to nebude potřeba. Připnula si i láhev s vodou, protože to je potřeba. \n"
 uvod_zahrada = "Brána do rozlehlé zahrady elfčiným nástrojům dlouho neodolávaly. Prošla po cestičce k bráně, ale\n její temnotu milující oči jí říkaly, že něco není v pořádku. Zahrady těchto boháčů bývaly\n udržované, takže zkušené oko po pár dnech poznalo, že nikdo není doma. Jako teď, i když věděla,\n že se vloupává do domu, ve kterém se nachází majitel. Podívala se na vilu. V kovových dekoracích\n na oknech v přízemí poznala díky svým zkušenostem bezpečnostní mříže a zdobené hlavní dveře\n byly solidní, pevné a s dobrým zámkem. Velmi ji překvapilo, že byly odemčené.\n"
-dialog = "Elfka zkusila vzít za dveře, ale ani se nepohnuly. Než se mohla začít zabývat touto skutečností více\n zabývat, uslyšela z druhé strany zoufalý, prosebný hlas:\n \'Prosím vás, jděte pryč.\' \nO pár okamžiků ho vystřídal jiný. Nebo spíše stejný, ale hovořící panovačným tónem: \n\'Ne, otevřete to nějak, musím se odtud dostat.\' Mezzobran zaváhala a pak poodstoupila ode dveří. Tohle rozhodně nebude zkoušet naslepo."
-vypiti_lahve = "Elfka otevřela barovou skříňku a uviděla jedinou, zato zdobenou láhev. Odšpuntovala ji a přičichla. Něco tak příjemného ještě necítila. Zaváhala, ale jestli někdy potřebovala posílit nervy, tak teď. Přiložila lahev ke rtům a pořádně se napila sladkého likéru."
+dialog = "Elfka zkusila vzít za dveře, ale ani se nepohnuly. Než se mohla začít zabývat touto skutečností více\n zabývat, uslyšela z druhé strany zoufalý, prosebný hlas:\n \'Prosím vás, jděte pryč.\' \nO pár okamžiků ho vystřídal jiný. Nebo spíše stejný, ale hovořící panovačným tónem: \n\'Ne, otevřete to nějak, musím se odtud dostat.\n\' Mezzobran zaváhala a pak poodstoupila ode dveří. Tohle rozhodně nebude zkoušet naslepo."
+vypiti_lahve = "Elfka otevřela barovou skříňku a uviděla jedinou, zato zdobenou láhev. Odšpuntovala ji a přičichla. Něco tak příjemného ještě necítila. \nZaváhala, ale jestli někdy potřebovala posílit nervy, tak teď. Přiložila lahev ke rtům a pořádně se napila sladkého likéru."
 rozbiti_lahve = "Elfka uchopila zbraň a bodla s ní mezi dvířka baru. Ozvalo se tříštění skla a ucítila nasládlou vůni."
 bodnuti_zbroje = "Mezzobran bodla mezi dveře skříně, ale čepel zastavila zbroj, která visela vevnitř."
 obleceni_zbroje = "Elfka vytáhla zbroj ze skříně a klepla na ni prstem. Ucítila tvrzenou kůži a podle zvuku ji zevnitř\n vyztužovaly kovové pásy. Po krátkém rozmýšlení si ji oblékla přes prošívanici."
 vyndani_sosky = "Zlodějka otevřela skříňku se slony a uvnitř se roztočila porcelánová soška slona. Zároveň se ale\n začala ozývat kolotočářská melodie. Elfka zaklela a rychle zatáhla za páčku, čímž strojek utišila."
 rozbiti_sosky = "Elfka sekla zbraní a oddělila hlavu tomu vevnitř. Byl to ale jen porcelánový slon."
-podivani_do_zrcadla = "Mezzobran otevřela skříňku a uviděla velké zrcadlo. Chtěla skříňku znovu zavřít, ale něco na\n vlastním odrazu ji zarazilo. Podívala se pořádně. A uvědomila si, že vypadá o dvacet let starší.\n Mávla nad tím rukou a zavřela skříňku. Ale pak si uvědomila, že pro člověka, co žije stěží sto let,\n jsou dvě dekády mnohem větší úsek."
+podivani_do_zrcadla = "Mezzobran otevřela skříňku a uviděla velké zrcadlo. Chtěla skříňku znovu zavřít, ale něco na\n vlastním odrazu ji zarazilo. Podívala se pořádně. A uvědomila si, že vypadá o dvacet let starší.\n Mávla nad tím rukou a zavřela skříňku. Ale pak si uvědomila, že pro člověka, co žije stěží sto let,\n jsou dvě dekády mnohem větší úsek.\n Usoudila, že se jedná o zlovonost, zrcadlo vyndala a hodila na podlahu."
 rozbiti_zrcadla = "Elfka pootevřela skříňku a švihnutím zbraně rozbila zrcadlo."
 obrazky = " obrázky. Je ne nich tříčlenná rodina doma, v lese a ve městě. Tříčlenná rodina sedí\n za stolem a usměvavý muž v zástěře jim nese jídlo. Jezdec na koni před vojáky s nápisem\n TATÍNEK V PPÁCI.  Žena s drdolem čte holčičce s knihy a nápis 2+2=4. Dáma v nádherných\n šatech popsaná MÁMA. Chlapec a dívka drhnou schody a mezi nimi je malé srdíčko. Dáma a rytíř\n a mezi nimi velké srdce."
 popis_hlavni_hala = "Hlavní hala zabírá viditelně velkou část přízemí. Její zdi pokrývá mramor a dekorace ve stylu\n starých sloupů. V každé zdi jsou jedny dveře a uprostřed stoupá vyřezávané dřevěné schodiště.\n Dojem elegance kazí jen hnijící ovoce na podlaze.\n"
@@ -68,9 +68,9 @@ popis_kuchyne= "V kuchyni stojí velká kovová kamna se sporákem a pecí, velk
 kuchar_utok = "U schodů stál malý tlustý muž v pracovním oblečení s kuchařskou zástěrou a šátkem kolem krku.\n Na jeho čele viděla Mezzobran ránu tak hlubokou, že ji nemohl přežít. Otočil k ní mrtvolně skelný\n pohled a pohybem, který byl jakoby mátožný, ale velmi rychlý, na ni zaútočil.\n"
 guvernantka_utok = "Sotva se Mezzobran rozhlédla, uviděla ženu, která k ní mířila podél vyřezávaného zábradlí. Měla\n drdol a strohé šaty guvernantky, do kterých se vpíjela krev z hluboké řezné rány na krku. Sotva se\n dostala na dosah k elfce, přešla do útoku."
 lord_utok = "Zpoza dveří náhle vyjde nahý muž s dýkou v zádech a ožene se pěstí."
-dcera_utok = "Holčička sahá elfce až do pasu, ale hýbe se rychle, mokré vlasy jí padají na ztuhlý obličej a košilka\n lepí na studené tělo."
-sluha_utok = "Za dvířky se ozvala rána a o chvíli později se z nich vykolébal mladík v livreji s železným hákem\n zabodnutým do krku a vrhl se na Mezzobran."
-sluzka_utok = "Víko se odklopilo a z díry v podlaze vylezla omrzlá dívka a vyrazila k elfce."
+dcera_utok = "holčička, která sahá elfce až do pasu, ale hýbe se rychle, mokré vlasy jí padají na ztuhlý obličej a košilka\n lepí na studené tělo."
+sluha_utok = "mladík v livreji s železným hákem\n zabodnutým do krku, který se vykolébl z dvířek a vrhl se na Mezzobran."
+sluzka_utok = "omrzlá dívka, která odklopila víko, vylezla z díry v podlaze a vyrazila k elfce."
 kuchar_popis = "Uprostřed místnosti stojí tlustý duch v zástěře a šátku."
 guvernantka_popis = "Vedle pultíku stojí přízrak mladé ženy s drdolem v strohých šatech guvenantky. Na jejím krku se\n táhne hluboká rána."
 lord_popis = "U stolu stojí přízračná postava nahého muže s upravenými vlasy i vousy. Na jeho průhledném těle \nse rýsovaly svaly a ze zad mu trčela rukojeť dýky."
@@ -89,7 +89,7 @@ lord_pozadavek = "\'Za všechno určitě může ta modla, musí být zničena,\'
 dcera_pozadavek = "\'Já chci přečíst pohádku o Hopsálkovi,\' fňuká, \'přečteš mi pohádku o Hopsálkovi?\'"
 sluha_pozadavek = "\'Já ještě nikdy nesáhl holce pod blůzu,\' zakňoural mládenec a vrhl na Mezzobran smutný pohled."
 sluzka_pozadavek = "\'Já si ještě nikdy nezatančila ploužák,\' zakňourala dívka a vrhla na Mezzobran smutný pohled."
-trezor = "Temná elfka zkusila otevřít trezor paklíčem, ale došlo jí, že to prostě nepůjde."
+trezor = "Temná elfka zkusila otevřít trezor paklíčem, ale došlo jí, že to prostě nepůjde. Musí použít klíč."
 modla = "Elfka se rozhlédla a všimla si i dřevěné modly. Cítila, jak se jí neživý pohled zabodává do hlavy.\n Jako by jí uspávala. \n\'Dobrý pokus,\' ušklíbla se, \'ale na elfy tohle neplatí.\'\nA pak vytřeštila oči, protože modla se prudce pohla směrem k ní."
 obsah = "Mezzobran vytáhla klíč, otevřela trezor a našla balíček dopisů a uložila si ho do kapsy."
 lady_popis = "U stolu seděla zesláblá žena."
@@ -105,19 +105,19 @@ popis_odmeny = "Během této podívané k ní přistoupila žena v režném rouc
 obsah_dopisu = "Temná elfka mávla rukou a objevily se čtyři světélkující koule. Jejich záře byla slabá, ale oči\n přivyklé na absolutní temnotu v ní dokázaly bez problémů číst. A že bylo o čem. Lordův vicemaršál\n si dopisoval s jeho manželkou, lady Terezou, ale vše se zdálo přátelské a nevinné. Ale elfka brzy\n postřehla, že ve vicemaršálových listech se začaly stále častěji objevovat zmínky o dívkách, které\n s jejím manželem potkávají. A pak i uklidnění nervózní adresátky, doplněné zprvu lehkými, později\n vytrvalými narážkami na vzhled. V Mezzobran začalo klíčit podezření. Brzy se dočetla o tom, že jí\n vicemaršál poslal zrcadlo. A i z reakcí začalo být zřejmé, že se dáma, které dopisy chodily, bála\n stárnutí. A vyvrcholilo to tím, že vicemaršál slíbil dodat modlu, která omlazuje. "
 Kuchar_duch = Duch(kuchar_popis, kuchar_pozadavek, "chceš li si s kuchařem promluvit", "sekáček.",
                    True, kuchar_pribeh, "Kuchař")
-Guvernantka_duch = Duch(guvernantka_popis, guvernartka_pozadavek, "chceš li si s guvernantkou promluvit",
+Guvernantka_duch = Duch(guvernantka_popis, guvernartka_pozadavek, "Chceš li si s guvernantkou promluvit",
                         "odpověď", True, guvernantka_pribeh, "Guvernantka")
-Sluha_duch = Duch(sluha_popis, sluha_pozadavek, "chceš li si se sluhou promluvit", "kozy", True,
+Sluha_duch = Duch(sluha_popis, sluha_pozadavek, "Chceš li si se sluhou promluvit", "kozy", True,
                   sluha_pribeh, "Sluha")
-Sluzka_duch = Duch(sluzka_popis, sluzka_pozadavek, "chceš li si se služkou promluvit", "líčidla.",
+Sluzka_duch = Duch(sluzka_popis, sluzka_pozadavek, "Chceš li si se služkou promluvit", "líčidla.",
                    True, sluzka_pribeh, "Služka")
 Majitel_duch = Duch(lord_popis, lord_pozadavek, "chceš li si s lordem promluvit", "kusy modly.", True,
                     lord_pribeh, "Lord")
-Dcera_duch = Duch(dcera_popis, dcera_pozadavek, "chceš li si s holčičkou promluvit", "pohádkovou knížku.", True,
+Dcera_duch = Duch(dcera_popis, dcera_pozadavek, "Chceš li si s holčičkou promluvit", "pohádkovou knížku.", True,
                   dcera_pribeh, "Holčička")
-Trezor = Duch("Prohledání místnosti a trezor", trezor, "chceš li otevřít trezor", "klíč", True,
+Trezor = Duch("Prohledání místnosti a trezor", trezor, "Chceš li otevřít trezor", "klíč", True,
               obsah, "Trezor")
-Manzelka = Duch(lady_popis, lady_pozadavek, "chceš li si s lady promluvit", "chloroform", True,
+Manzelka = Duch(lady_popis, lady_pozadavek, "Chceš li si s lady promluvit", "chloroform", True,
                 omameni, "Lady")
 Zadny_duch = Duch("X", "X", "X", "X", False, "X", "X")
 Kuchar_zombie = Zombie("Zombie kuchař", 1, 8, 6, 22, -2, kostka, kuchar_utok)
@@ -173,7 +173,7 @@ Kuchyne_vily = Kuchyne(Kuchar_duch, Zadna_zombie, "výtah.", Ledarna, popis_kuch
                        Zadna_zombie, kostka,  Spiz, nedvere)
 Jidelna_vily = Jidelna(Manzelka, Zlovony_demon, "klíč", Ledarna, popis_jidelna, "Jídelna", Mezzobran, nedvere,
                        Zadna_zombie, kostka,  nedvere)
-hlavni_vchod = Vrata(Hlavni_hala, Nepokoj, "Vstup do vily","Vstup do vily", Mezzobran)
+hlavni_vchod = Vrata(Hlavni_hala, Nepokoj, "vstup do vily","vstup do vily", Mezzobran)
 hala_jidelna = Zablokovane_dvere(Hlavni_hala, Jidelna_vily, "dveře v levé zdi haly", dvere_jidelna, Mezzobran, dialog)
 hala_obyvak = Dvere(Hlavni_hala, Obyvaci_pokoj, "dveře v zadní stěně haly",dvere_obyvaci_pokoj, Mezzobran)
 hala_knihovna = Dvere(Hlavni_hala, Knihovna, "dveře v pravé stěně haly",dvere_knihovna, Mezzobran)

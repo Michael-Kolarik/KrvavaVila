@@ -61,6 +61,7 @@ class Zablokovane_dvere(Dvere):  # Tahle třída je pro speciální případ dve
                 self.prvnimistnost.vstup()
     def odblokovani(self):
         self.__zablokovani = False
+        self.pouziti = True
 
 
 class Vrata(Dvere):

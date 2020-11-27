@@ -69,14 +69,14 @@ class Mistnost:  # Tahle třída slouží k vytvoření jednotlivých místnost�
             cprint("{0}, pak stiskni R".format(self.duch.prikaz),"green")
         if self.ukryt.jmeno != "Nic":
             self.vypis_ukrytu()
-        cprint("Pokud chceš jít jinam, stiskni J", "green")
         if self.__poklad != "Nic":
             cprint("Pokud chceš prohledat místnost, stiskni P", "green")
-        if "učebnici" in self.hrdinka.inventar:
+        if "učebnici." in self.hrdinka.inventar:
             if "odpověď" in self.hrdinka.inventar:
                 x = "X"
             else:
                 cprint("Pokud chceš luštit hádanku, stiskni H","green")
+        cprint("Pokud chceš jít jinam, stiskni J", "green")
 
     def prepadeni_zombii(self):
         self.zombie = self.ukryt.ukryta_zombie()
@@ -246,7 +246,7 @@ class Jidelna(Mistnost):  # Tahle třída je pro speciální případ místnosti
                 print("Potom prohledala ženu zhroucenou u stolu.")
                 self.hrdinka.sebrani_veci(self.poklad)
                 self.dvere.odblokovani()
-                cprint("Chceš odejít dveřmi, nebo výtahem?", "green")
+                cprint("Chceš odejít dveřmi, nebo výtahem? Stiskni D nebo V.", "green")
                 volba = input()
                 if volba == "D":
                     self.dvere.pruchod(self.hrdinka)

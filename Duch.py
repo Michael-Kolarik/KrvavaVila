@@ -55,4 +55,4 @@ class Duch:  # Tahle třída slouží k vykreslení duchů - k rozhovoru
                 print(self.pribeh)
                 self.uspokojeni()
         else:
-            print("\"Je mi líto, ale s tím já teď nic nenadělám,\" pokrčila temná elfka rameny.")
+            print("\'Je mi líto, ale s tím já teď nic nenadělám,\' pokrčila temná elfka rameny.")

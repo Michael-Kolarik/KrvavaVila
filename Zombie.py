@@ -17,7 +17,7 @@ class Zombie:  # Tahle třída je na zombie - fyzické protivníky
 
 
     def jmeno(self):
-        return str(self.jmeno)  # vypisuje jmeno
+        return str(self.__jmeno)  # vypisuje jmeno
 
 
     @property
@@ -31,9 +31,9 @@ class Zombie:  # Tahle třída je na zombie - fyzické protivníky
     def obrana(self, zasah, poskozeni):
         if zasah >= self.obranne_cislo:
             self.zivoty = self.zivoty - poskozeni
-            print("Ostří zajelo do neživého těla")
+            print("Ostří zajelo do neživého těla.")
         else:
-            print("Útok nemrtvou bytost minul")
+            print("Útok tu bytost minul.")
         if self.zivoty <= 0:
             print("Mezzobran se podařilo bodnout zvlášť citelně.")
             if self.kostka.hod() >= poskozeni + 2:
@@ -41,7 +41,7 @@ class Zombie:  # Tahle třída je na zombie - fyzické protivníky
                 print("Ale zombie se i po téhle ráně zvedá.")
             else:
                 self.zivoty = 0
-                print("{0} to má za sebou".format(self.__jmeno))
+                print("{0} to má za sebou.".format(self.__jmeno))
 
     def utok(self, souper, kostka):
         print("Zombie se ohnala svou nemrvou pěstí.")
@@ -51,10 +51,10 @@ class Zombie:  # Tahle třída je na zombie - fyzické protivníky
         souper.obrana(hod_na_utok, hod_na_zraneni)
 
     def __str__(self):
-        return str(self.popis)  # vypisuje popis
+        return self.popis  # vypisuje popis
 
     def prepad(self, cil, kostka):
-        print("Náhle za sebou uslyšíš divný zvuk. Je to {0} Divoce se rozmáchne a útočí.".format(self.__str__()))
+        print("Náhle elfka uslyší divný zvuk. Je to {0} Divoce se rozmáchne a útočí.".format(self.__str__()))
         hod_na_utok = kostka.hod() + self.utocne_cislo + 7
         kostka_zraneni = Kostka(self.zraneni)
         hod_na_zraneni = kostka_zraneni.hod() + self.utocne_cislo
@@ -76,7 +76,7 @@ class Demon(Zombie):  # Tahle třída je pro vylepšeného finálního bosse
 
     def utok(self, souper, kostka):
         if self.__viditelny:
-            print("Démon se zneviditelnil.")
+            print("Démon se zneviditelnil. Mezzobran tušila kde je, ale útok i obrana teď budou těžší.")
             self.__viditelny = False
             self.obranne_cislo = self.obranne_cislo + 5
             self.utocne_cislo = self.utocne_cislo + 5
