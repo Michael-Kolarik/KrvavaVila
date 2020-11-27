@@ -5,7 +5,7 @@ from Dvere import Dvere
 from Kostka import Kostka
 kostka = Kostka(20)
 class Mistnost:  # Tahle třída slouží k vytvoření jednotlivých místností vily
-    def __init__(self, duch, zombie, poklad, ukryt, popis, nazev, hrdinka, dvere, druha_zombie, kostka, jmeno_dveri):
+    def __init__(self, duch, zombie, poklad, ukryt, popis, nazev, hrdinka, dvere, druha_zombie, kostka):
         self.duch = duch
         self.zombie = zombie
         self.dvere = dvere
@@ -16,7 +16,7 @@ class Mistnost:  # Tahle třída slouží k vytvoření jednotlivých místnost�
         self.hrdinka = hrdinka
         self.druha_zombie = druha_zombie
         self.__kostka = kostka
-        self.jmeno_dveri = jmeno_dveri
+
 
     def nazev(self):
         return self.__nazev
@@ -58,7 +58,6 @@ class Mistnost:  # Tahle třída slouží k vytvoření jednotlivých místnost�
             elif volba == "H":
                 self.hrdinka.hadanka()
         if self.hrdinka.nazivu:
-            self.dvere.prejmenovani(self.jmeno_dveri)
             self.odchod()
 
     def odchod(self):
@@ -99,10 +98,10 @@ class Mistnost:  # Tahle třída slouží k vytvoření jednotlivých místnost�
 
 
 class Hala(Mistnost):  # Tahle třída je pro pokoje s mnoha dveřmi
-    def __init__(self, duch, zombie, poklad, ukryt, popis, nazev, hrdinka, dvere, druha_zombie, kostka, jmeno_dveri,
+    def __init__(self, duch, zombie, poklad, ukryt, popis, nazev, hrdinka, dvere, druha_zombie, kostka,
                  druhe_dvere,
                  treti_dvere, ctvrte_dvere, pate_dvere, skryte_dvere):
-        super().__init__(duch, zombie, poklad, ukryt, popis, nazev, hrdinka, dvere, druha_zombie, kostka, jmeno_dveri)
+        super().__init__(duch, zombie, poklad, ukryt, popis, nazev, hrdinka, dvere, druha_zombie, kostka)
         self.__druhe_dvere = druhe_dvere
         self.__treti_dvere = treti_dvere
         self.__ctvrte_dvere = ctvrte_dvere
@@ -121,7 +120,7 @@ class Hala(Mistnost):  # Tahle třída je pro pokoje s mnoha dveřmi
             cprint("Pokud chceš použít {0}, stiskni 4".format(self.__ctvrte_dvere.popis), "green")
         if self.__pate_dvere.popis != "Neexistuje":
             cprint("Pokud chceš použít {0}, stiskni 5".format(self.__pate_dvere.popis), "green")
-        if self.__skryte_dvere.popis != "Neexistuje" and self.__skryte_dvere.popis in self.hrdinka.inventar:
+        if self.__skryte_dvere.popis != "Neexistuje" and self.__skryte_dvere.objev in self.hrdinka.inventar:
             cprint("Pokud chceš použít {0}, stiskni S".format(self.__skryte_dvere.popis), "green")
         vyberd = input()
         if vyberd == "1":
@@ -135,7 +134,6 @@ class Hala(Mistnost):  # Tahle třída je pro pokoje s mnoha dveřmi
         elif vyberd == "5":
             self.__pate_dvere.pruchod(self.hrdinka)
         elif vyberd == "S":
-            self.__skryte_dvere.prejmenovani(self.jmeno_dveri)
             self.__skryte_dvere.pruchod(self.hrdinka)
         else:
             self.zustat()
@@ -149,10 +147,10 @@ class Hala(Mistnost):  # Tahle třída je pro pokoje s mnoha dveřmi
 
 
 class Kuchyne(Mistnost):  # Tahle třída je pro speciální případ místnosti
-    def __init__(self, duch, zombie, poklad, ukryt, popis, nazev, hrdinka, dvere, druha_zombie, kostka, jmeno_dveri,
+    def __init__(self, duch, zombie, poklad, ukryt, popis, nazev, hrdinka, dvere, druha_zombie, kostka,
                  druhy_ukryt,
                  vytah):
-        super().__init__(duch, zombie, poklad, ukryt, popis, nazev, hrdinka, dvere, druha_zombie, kostka, jmeno_dveri)
+        super().__init__(duch, zombie, poklad, ukryt, popis, nazev, hrdinka, dvere, druha_zombie, kostka)
         self.__druhy_ukryt = druhy_ukryt
         self.__vytah = vytah
 
@@ -197,7 +195,6 @@ class Kuchyne(Mistnost):  # Tahle třída je pro speciální případ místnosti
             self.__druhy_ukryt.otevreni()
 
     def odchod(self):
-        self.dvere.prejmenovani(self.jmeno_dveri)
         if "výtah." in self.hrdinka.inventar:
             cprint("chceš odejít dveřmi, nebo výtahem? Stiskni D nebo V", "green")
             volba = input()
@@ -210,9 +207,9 @@ class Kuchyne(Mistnost):  # Tahle třída je pro speciální případ místnosti
 
 
 class Jidelna(Mistnost):  # Tahle třída je pro speciální případ místnosti
-    def __init__(self, duch, zombie, poklad, ukryt, popis, nazev, hrdinka, dvere, druha_zombie, kostka, jmeno_dveri,
+    def __init__(self, duch, zombie, poklad, ukryt, popis, nazev, hrdinka, dvere, druha_zombie, kostka,
                  vytah):
-        super().__init__(duch, zombie, poklad, ukryt, popis, nazev, hrdinka, dvere, druha_zombie, kostka, jmeno_dveri)
+        super().__init__(duch, zombie, poklad, ukryt, popis, nazev, hrdinka, dvere, druha_zombie, kostka)
         self.__poprve = True
         self.__vytah = vytah
 
@@ -246,9 +243,9 @@ class Jidelna(Mistnost):  # Tahle třída je pro speciální případ místnosti
             if self.hrdinka.nazivu:
                 print(
                     "Mezzobran těžce vydechla, otřela z ostří zelenou krev, vyměnila bojové vybavení za zlodějské a\n pomocí paklíčů odemkla dveře jídelny.")
+                print("Potom prohledala ženu zhroucenou u stolu.")
                 self.hrdinka.sebrani_veci(self.poklad)
                 self.dvere.odblokovani()
-                self.dvere.prejmenovani(self.jmeno_dveri)
                 cprint("Chceš odejít dveřmi, nebo výtahem?", "green")
                 volba = input()
                 if volba == "D":
@@ -256,7 +253,7 @@ class Jidelna(Mistnost):  # Tahle třída je pro speciální případ místnosti
                 else:
                     self.__vytah.pruchod(self.hrdinka)
         else:
-            cprint("Chceš odejít dveřmi, nebo výtahem?", "green")
+            cprint("Chceš odejít dveřmi, nebo výtahem? Stiskni D nebo V.", "green")
             volba = input()
             if volba == "D":
                 self.dvere.pruchod(self.hrdinka)

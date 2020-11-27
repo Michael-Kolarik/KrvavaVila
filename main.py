@@ -63,7 +63,7 @@ dvere_zenske_loznice = "dveře od ložnice služky a guvernantky"
 dvere_kuchyne = "dveře kuchyně"
 dvere_haly = "skryté dveře od hlavní haly"
 dvere_ochoz = "dveře mezi panskou a služebnickou částí"
-dvere_sluzebni_cast = "jeste to musim vymyslet"
+dvere_sluzebni_cast = "dveře mezi služební chodbou a schodištěm"
 popis_kuchyne= "V kuchyni stojí velká kovová kamna se sporákem a pecí, velký pracovní stůl a několik kredenců \ns nádobím. Ve zdi nejdál od pece jsou nízká dvířka ve zdi a poklop v podlaze."
 kuchar_utok = "U schodů stál malý tlustý muž v pracovním oblečení s kuchařskou zástěrou a šátkem kolem krku.\n Na jeho čele viděla Mezzobran ránu tak hlubokou, že ji nemohl přežít. Otočil k ní mrtvolně skelný\n pohled a pohybem, který byl jakoby mátožný, ale velmi rychlý, na ni zaútočil.\n"
 guvernantka_utok = "Sotva se Mezzobran rozhlédla, uviděla ženu, která k ní mířila podél vyřezávaného zábradlí. Měla\n drdol a strohé šaty guvernantky, do kterých se vpíjela krev z hluboké řezné rány na krku. Sotva se\n dostala na dosah k elfce, přešla do útoku."
@@ -131,7 +131,7 @@ Zadna_zombie = Zombie("X", 0, 0, 0, 0, 0, kostka, "X")
 Zlovony_demon = Demon("Démon", 3, 13, 4, 10, 3, kostka, "démon", True)
 Inventar = ["kozy", "chloroform"]
 nedvere = Nedvere()
-Nepokoj = Mistnost(Zadny_duch, Zadna_zombie, "Nic", "Nic", "Nic", "Nic", Zadna_zombie, nedvere, Zadna_zombie, kostka, "Nic")
+Nepokoj = Mistnost(Zadny_duch, Zadna_zombie, "Nic", "Nic", "Nic", "Nic", Zadna_zombie, nedvere, Zadna_zombie, kostka)
 Mezzobran = Hrdinka("Mezzobran", 4, 15, 6, 37, Nepokoj, Inventar, 0, True, kostka, hadanka, prevlekani)
 Lahev = Poklad(True, False, vypiti_lahve,rozbiti_lahve, "lektvar","vypití flašky", "střepy")
 Brigadina = Poklad(True, False, obleceni_zbroje, bodnuti_zbroje, "zbroj", "oblečení brigadiny", "nic")
@@ -146,50 +146,50 @@ Kosmeticka_skrinka = Pokladnice("kosmetickou skříňku", Zadna_zombie, False, M
 Hraci_skrinka = Pokladnice("hrací skříňku", Zadna_zombie, False, Mezzobran, True, kostka, Zadna_zombie, Tancici_figurka)
 Skrin = Pokladnice("skříň", Zadna_zombie, False, Mezzobran, True, kostka, Zadna_zombie, Brigadina)
 Hlavni_hala = Hala(Zadny_duch, Kuchar_zombie, "služebnické dveře v přízemí", Nic, popis_hlavni_hala, "Hala", Mezzobran, nedvere,
-                   Zadna_zombie, kostka, dvere_haly, nedvere, nedvere, nedvere, nedvere, nedvere)
+                   Zadna_zombie, kostka,  nedvere, nedvere, nedvere, nedvere, nedvere)
 Ochoz = Hala(Zadny_duch, Guvernantka_zombie, "skryté dveře v patře", Nic, popis_ochoz, "Ochoz", Mezzobran, nedvere,
-             Zadna_zombie, kostka, dvere_ochoz, nedvere, nedvere, nedvere, nedvere, nedvere)
+             Zadna_zombie, kostka,  nedvere, nedvere, nedvere, nedvere, nedvere)
 Oblast_sluzebnictva = Hala(Zadny_duch, Zadna_zombie, "Nic", Nic, popis_mistnost_sluzebnictva, "Oblast služebnictva", Mezzobran, nedvere,
-                           Zadna_zombie, kostka, dvere_sluzebni_cast, nedvere, nedvere, nedvere, nedvere, nedvere)
+                           Zadna_zombie, kostka,  nedvere, nedvere, nedvere, nedvere, nedvere)
 Schody_pro_sluzebnictvo = Hala(Zadny_duch, Zadna_zombie, "Nic", Nic, popis_schodiste, "Schody pro služebnictvo",
-                               Mezzobran, nedvere, Zadna_zombie, kostka, "Nic", nedvere, nedvere, nedvere, nedvere, nedvere)
+                               Mezzobran, nedvere, Zadna_zombie, kostka, nedvere, nedvere, nedvere, nedvere, nedvere)
 Obyvaci_pokoj = Mistnost(Majitel_duch, Zadna_zombie, "vojenskou medaili.", Bar, popis_obyvaci_pokoj, "Obývák", Mezzobran, nedvere,
-                         Zadna_zombie, kostka, dvere_obyvaci_pokoj)
+                         Zadna_zombie, kostka)
 Knihovna = Mistnost(Guvernantka_duch, Zadna_zombie, "pohádkovou knížku.", Nic, popis_knihovna, "Knihovna", Mezzobran, nedvere,
-                    Zadna_zombie, kostka, dvere_knihovna)
+                    Zadna_zombie, kostka)
 Lordova_loznice = Mistnost(Zadny_duch, Majitel_zombie, "rapír a dýku.", Skrin, popis_panova_loznice, "Lordova ložnice",
-                           Mezzobran, nedvere, Zadna_zombie, kostka, dvere_panova_loznice)
+                           Mezzobran, nedvere, Zadna_zombie, kostka)
 Loznice_lady = Mistnost(Trezor, Socha_demona, "kusy modly.", Kosmeticka_skrinka, popis_loznice_pani, "Ložnice lady", Mezzobran,
-                        nedvere, Zadna_zombie, kostka, dvere_loznice_lady)
+                        nedvere, Zadna_zombie, kostka)
 Detsky_pokoj = Mistnost(Dcera_duch, Zadna_zombie, obrazky, Hraci_skrinka, popis_detsky_pokoj, "Dětský pokoj", Mezzobran,
-                        nedvere, Zadna_zombie, kostka, dvere_detsky_pokoj)
+                        nedvere, Zadna_zombie, kostka)
 Koupelna = Mistnost(Zadny_duch, Zadna_zombie, "líčidla.", Vana, popis_koupelna, "Koupelna", Mezzobran, nedvere,
-                    Zadna_zombie, kostka, dvere_koupelana)
+                    Zadna_zombie, kostka)
 Muzska_loznice = Mistnost(Sluha_duch, Zadna_zombie, "sekáček.", Nic, popis_muzska_loznice, "Mužská ložnice", Mezzobran,
-                          nedvere, Zadna_zombie, kostka, dvere_muzska_loznice)
+                          nedvere, Zadna_zombie, kostka)
 Zenska_loznice = Mistnost(Sluzka_duch, Zadna_zombie, "učebnici.", Nic, popis_zenska_loznice, "Žeská ložnice",
-                          Mezzobran, nedvere, Zadna_zombie, kostka,dvere_zenske_loznice)
+                          Mezzobran, nedvere, Zadna_zombie, kostka)
 Kuchyne_vily = Kuchyne(Kuchar_duch, Zadna_zombie, "výtah.", Ledarna, popis_kuchyne, "Kuchyně", Mezzobran, nedvere,
-                       Zadna_zombie, kostka, dvere_kuchyne, Spiz, nedvere)
+                       Zadna_zombie, kostka,  Spiz, nedvere)
 Jidelna_vily = Jidelna(Manzelka, Zlovony_demon, "klíč", Ledarna, popis_jidelna, "Jídelna", Mezzobran, nedvere,
-                       Zadna_zombie, kostka, dvere_jidelna, nedvere)
-hlavni_vchod = Vrata(Hlavni_hala, Nepokoj, "Vstup do vily", Mezzobran)
-hala_jidelna = Zablokovane_dvere(Hlavni_hala, Jidelna_vily, "dveře v levé zdi haly", Mezzobran, dialog)
-hala_obyvak = Dvere(Hlavni_hala, Obyvaci_pokoj, "dveře v zadní stěně haly", Mezzobran)
-hala_knihovna = Dvere(Hlavni_hala, Knihovna, "dveře v pravé stěně haly", Mezzobran)
-hala_schodiste = Dvere(Hlavni_hala, Schody_pro_sluzebnictvo, "služebnické dveře v přízemí", Mezzobran)
-hala_ochoz = Dvere(Hlavni_hala, Ochoz, "velké schodiště", Mezzobran)
-ochoz_lordova_loznice = Dvere(Ochoz, Lordova_loznice, "dveře v protější zdi vpravo", Mezzobran)
-ochoz_loznice_lady = Dvere(Ochoz, Loznice_lady, "dveře v protější zdi vpravo", Mezzobran)
-ochoz_detsky_pokoj = Dvere(Ochoz, Detsky_pokoj, "dveře v pravé zdi", Mezzobran)
-ochoz_koupelna = Dvere(Ochoz, Koupelna, "dveře v levé zdi", Mezzobran)
-ochoz_oblast_sluzebnictva = Dvere(Oblast_sluzebnictva, Ochoz, "skryté dveře v patře", Mezzobran)
-oblast_sluzebnivtva_muzska_loznice = Dvere(Oblast_sluzebnictva, Muzska_loznice, "dveře vlevo", Mezzobran)
-oblast_sluzebnictva_zenska_loznice = Dvere(Oblast_sluzebnictva, Zenska_loznice, "dveře vpravo", Mezzobran)
-oblast_sluzebnictva_schodiste = Dvere(Oblast_sluzebnictva, Schody_pro_sluzebnictvo, "služební dveře v patře", Mezzobran)
-schodiste_kuchyne = Dvere(Schody_pro_sluzebnictvo, Kuchyne_vily, "služební dveře v suterénu", Mezzobran)
-kuchynsky_vytah = Dvere(Kuchyne_vily, Jidelna_vily, "výtah", Mezzobran)
-Neexistijici_dvere = Dvere(Nepokoj, Nepokoj, "Neexistuje", Mezzobran)
+                       Zadna_zombie, kostka,  nedvere)
+hlavni_vchod = Vrata(Hlavni_hala, Nepokoj, "Vstup do vily","Vstup do vily", Mezzobran)
+hala_jidelna = Zablokovane_dvere(Hlavni_hala, Jidelna_vily, "dveře v levé zdi haly", dvere_jidelna, Mezzobran, dialog)
+hala_obyvak = Dvere(Hlavni_hala, Obyvaci_pokoj, "dveře v zadní stěně haly",dvere_obyvaci_pokoj, Mezzobran)
+hala_knihovna = Dvere(Hlavni_hala, Knihovna, "dveře v pravé stěně haly",dvere_knihovna, Mezzobran)
+hala_schodiste = Dvere(Hlavni_hala, Schody_pro_sluzebnictvo, "služebnické dveře v přízemí", dvere_haly, Mezzobran)
+hala_ochoz = Dvere(Hlavni_hala, Ochoz, "velké schodiště", "velké schodiště", Mezzobran)
+ochoz_lordova_loznice = Dvere(Ochoz, Lordova_loznice, "dveře v protější zdi vpravo",dvere_panova_loznice, Mezzobran)
+ochoz_loznice_lady = Dvere(Ochoz, Loznice_lady, "dveře v protější zdi vpravo",dvere_loznice_lady, Mezzobran)
+ochoz_detsky_pokoj = Dvere(Ochoz, Detsky_pokoj, "dveře v pravé zdi",dvere_detsky_pokoj, Mezzobran)
+ochoz_koupelna = Dvere(Ochoz, Koupelna, "dveře v levé zdi",dvere_koupelana, Mezzobran)
+ochoz_oblast_sluzebnictva = Dvere(Oblast_sluzebnictva, Ochoz, "skryté dveře v patře",dvere_ochoz, Mezzobran)
+oblast_sluzebnivtva_muzska_loznice = Dvere(Oblast_sluzebnictva, Muzska_loznice, "dveře vlevo", dvere_muzska_loznice, Mezzobran)
+oblast_sluzebnictva_zenska_loznice = Dvere(Oblast_sluzebnictva, Zenska_loznice, "dveře vpravo",dvere_zenske_loznice, Mezzobran)
+oblast_sluzebnictva_schodiste = Dvere(Oblast_sluzebnictva, Schody_pro_sluzebnictvo, "služební dveře v patře",dvere_sluzebni_cast, Mezzobran)
+schodiste_kuchyne = Dvere(Schody_pro_sluzebnictvo, Kuchyne_vily, "služební dveře v suterénu",dvere_kuchyne, Mezzobran)
+kuchynsky_vytah = Dvere(Kuchyne_vily, Jidelna_vily, "výtah","výtah", Mezzobran)
+Neexistijici_dvere = Dvere(Nepokoj, Nepokoj, "Neexistuje","Neexistuje", Mezzobran)
 Hlavni_hala.predefinovani_dveri(hlavni_vchod)
 Hlavni_hala.predefinovani_dalsich_dveri(hala_ochoz, hala_jidelna, hala_knihovna, hala_obyvak, hala_schodiste)
 Ochoz.predefinovani_dveri(hala_ochoz)
