@@ -87,12 +87,14 @@ class Hrdinka:  # Tahle třída je pro hlavní postavu
         if volba == "1":
             if hod_na_iniciativu > 15:
                 protivnik2.utok(self, kostka)
+            volba = "U"
             self.souboj(protivnik1, kostka, volba)
             if hod_na_iniciativu <= 15:
                 protivnik2.utok(self, kostka)
         elif volba == "2":
             if hod_na_iniciativu > 15:
                 protivnik1.utok(self, kostka)
+            volba = "U"
             self.souboj(protivnik2, kostka, volba)
             if hod_na_iniciativu <= 15:
                 protivnik1.utok(self, kostka)
@@ -104,7 +106,7 @@ class Hrdinka:  # Tahle třída je pro hlavní postavu
         while nepritel1.nazivu or nepritel2.nazivu:
             if nepritel1.nazivu and nepritel2.nazivu:
                 cprint("Pokud chceš zaútočit na dívku pokrytou jinovatkou, stiskni 1, pokud na chlapce v livreji, stiskni 2, pokud se chceš pouze bránit, stiskni O", "green")
-                volba = input()
+                volba = str(input())
 
                 self.boj_s_presilou(nepritel1, nepritel2, kostka, volba)
             elif nepritel1.nazivu:
@@ -172,6 +174,7 @@ class Hrdinka:  # Tahle třída je pro hlavní postavu
                 self.__inventar.append("odpověď")
             else:
                 print("\'To je špatně,\' řekla mluvící učebnice.")
+                cprint("chceš řešit hádanku znovu? Stiskni A. Pokud nechceš, stiskni N.", "green")
                 rozhodnuti = input()
 
     def zabiti(self):

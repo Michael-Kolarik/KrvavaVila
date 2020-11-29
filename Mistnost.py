@@ -156,12 +156,10 @@ class Kuchyne(Mistnost):  # Tahle třída je pro speciální případ místnosti
 
     def prepadeni_zombii(self):
         if self.vyreseni_prvniho == False:
-            print("Popis")
             self.zombie = self.ukryt.ukryta_zombie()
             self.ukryt.vyprazdneni()
             self.zombie.prepad(self.hrdinka, kostka)
         if self.vyreseni_druheho == False:
-            print("Popis")
             self.__druha_zombie = self.__druhy_ukryt.ukryta_zombie()
             self.__druhy_ukryt.vyprazdneni()
             self.__druha_zombie.prepad(self.hrdinka, kostka)
