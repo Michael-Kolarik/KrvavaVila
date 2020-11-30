@@ -25,6 +25,7 @@ class Mistnost:  # Tahle třída slouží k vytvoření jednotlivých místnost�
         return self.__poklad
 
     def vstup(self):
+        self.vycisti_obrazovku()
         print(self.popis)
         if self.duch.pritomnost:
             print(self.duch.__str__())
@@ -95,6 +96,16 @@ class Mistnost:  # Tahle třída slouží k vytvoření jednotlivých místnost�
         self.ukryt.otevreni()
     def predefinovani_dveri(self, dvere):
         self.dvere = dvere
+    def vycisti_obrazovku(self):
+        """
+        Vymaže obrazovku konzole.
+        """
+        import sys as _sys
+        import subprocess as _subprocess
+        if _sys.platform.startswith("win"):
+            _subprocess.call(["cmd.exe", "/C", "cls"])
+        else:
+            _subprocess.call(["clear"])
 
 
 class Hala(Mistnost):  # Tahle třída je pro pokoje s mnoha dveřmi
@@ -212,6 +223,7 @@ class Jidelna(Mistnost):  # Tahle třída je pro speciální případ místnosti
         self.__vytah = vytah
 
     def vstup(self):
+        self.vycisti_obrazovku()
         if self.__poprve:
             print(self.popis)
             print(self.duch.__str__())
