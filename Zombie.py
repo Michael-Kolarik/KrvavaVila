@@ -44,7 +44,7 @@ class Zombie:  # Tahle třída je na zombie - fyzické protivníky
                 print("{0} to má za sebou.".format(self.__jmeno))
 
     def utok(self, souper, kostka):
-        print("Zombie se ohnala svou nemrvou pěstí.")
+        print("{0} se ohnala svou nemrvou pěstí.".format(self.__str__()))
         hod_na_utok = kostka.hod() + self.utocne_cislo + 2
         kostka_zraneni = Kostka(self.zraneni)
         hod_na_zraneni = kostka_zraneni.hod() + self.utocne_cislo
