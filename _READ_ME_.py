@@ -9,3 +9,5 @@ která se uáže ještě složitější, než se na počátku zdálo.
 
 Pokud si chcete hru zahrát, a určit, jak příběh elfí zlodějky dopadne, stáhněte si tyto soubory a spusťte
 soubor main.py
+
+Za námět děkuji Vlastimilu Valluchovi a za konzultace při programování Tomáši Kolaříkovi.
