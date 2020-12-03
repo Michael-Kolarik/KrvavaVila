@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-import sys
 from termcolor import colored, cprint
 class Cutscena:
     def __init__(self, uvod, zadani, priprava, zahrada, mistnost, hrdinka, konec_smrt, konec_utek, konec_poprava, konec_zaplaceni, konec_dluh, konec_ocosteni, odmena, obsah_dopisu):
